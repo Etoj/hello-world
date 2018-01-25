@@ -16,6 +16,7 @@ public class Cos {
 	private WebDriver wd;
 	private String url;
 	private String chkBxValue;
+	private String name;
 	
 	@Before
 	public void setUp() {
@@ -25,6 +26,7 @@ public class Cos {
 		url ="http://toolsqa.com/automation-practice-form/";
 		wd.get(url);
 		chkBxValue ="Automation Tester";
+		nameValue ="Bartek"
 	}
 	@Test
 	public void url() {
@@ -34,8 +36,8 @@ public class Cos {
 	public void nameInput(){
 		WebElement name = wd.findElement(By.name("firstname"));
 		name.clear();
-		name.sendKeys("Bartek");	
-		Assert.assertTrue(wd.findElement(By.name("firstname")).getAttribute("value").equals("Bartek"));
+		name.sendKeys(nameValue);	
+		Assert.assertTrue(wd.findElement(By.name("firstname")).getAttribute("value").equals(nameValue));
 	}
 	@Test
 	public void chkBxTest() {
