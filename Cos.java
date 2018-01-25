@@ -16,7 +16,7 @@ public class Cos {
 	private WebDriver wd;
 	private String url;
 	private String chkBxValue;
-	private String name;
+	private String nameValue;
 	
 	@Before
 	public void setUp() {
