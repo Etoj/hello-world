@@ -23,8 +23,8 @@ public class Rossmann {
 		wd.manage().window().maximize();
 		wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		url = "https://www.rossmann.pl/";	
-		loginValue = "sylwiaklajn90@gmail.com";
-		passwordValue ="Bartus87!!!";
+		loginValue = "login";
+		passwordValue ="password";
 		wd.get(url);
 	}
 	@Test
